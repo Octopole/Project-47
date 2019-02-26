@@ -1,0 +1,12 @@
+24.01.19 THU
+Linking to GLEW and GLFW on Arch Linux successful.
+Compiling command: g++ opengl_test.cpp -o opengl_test -lGL -lGLEW -lglfw
+Extra flags: -lGLU -lglfw3 -lX11 -lXxf86vm -lXrandr -lpthread -lXi -ldl -lXinerama -lXcursor
+
+30.01.19 WED
+Jony gives up in displaying a uv sphere manually (T_T).
+Switching to GLUT.
+Compiling command: g++ opengl_test.cpp -o opengl_test -lGL -lglut -lGLU
+
+04.02.19 MON
+Bringing spinning functionality to the sphere.

@@ -1,8 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include<string.h>
+//#include<string.h>
 #include<math.h>
-#include<malloc.h>
+//#include<malloc.h>
 #include<time.h>
 #define DIRCOEF 1
 #define RESCOEF 0.0005
@@ -80,7 +80,8 @@ int frame_calculate(double posi_table[init_number][4]){
         }
         //printf("%f %f %f %f\n", new_table[i][0], new_table[i][1], new_table[i][2], new_table[i][3]);
     }
-    //printf("\n");
+
+
     for(int i=0; i<init_number; i++){
         while(new_table[i][0]<0){
             new_table[i][0]=360+new_table[i][0];
@@ -103,7 +104,6 @@ int frame_calculate(double posi_table[init_number][4]){
             }
         }
     }
-    //printf("!!!\n");
     if(flag){
         return 1;
     }
